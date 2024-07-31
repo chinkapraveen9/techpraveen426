@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+        
+        .navbar {
+            list-style-type: none;
+            background-color: rgb(26, 26, 26);
+            /* padding: 0px;
+            margin: 0px; */
+            overflow:hidden;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        @media screen and (max-width:709px) { 
+            navbar{ 
+             background-color: brown; 
+           } 
+        }
+          
+        
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            padding: 10px;
+            display: block; 
+            
+        }
+        .images{
+            width: 1000px;
+            height: 400px;
+            
+        }
+        
+        
+        .navbar a:hover{
+            background-color: black;
+        }
+        .navbar li{
+            float: left;
+            /* margin-left: 100px;  */
+            align-items: left;
+            
+             
+        }
+        .images{
+            display: flex;
+            width: 100%;
+            
+        }
+        
+        
+        @media screen and (maxwidth:890px){
+            sixteen{
+                background-color: aqua;
+            }
+            
+        }
+        images img{
+            height: 800px;
+            width: 100%;
+            transition: all 0.15s ease;
+        }
+        .images input{
+            display: none;
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            
+           background-color:black
+        }
+        .dots label{
+        color: aliceblue;
+            height: 10px;
+            width: 10px;
+            border-radius: 80%;
+            border: solid 3px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            margin: 5px;
+        }
+        /* .dots label:hover{}
+        #img1:checked~.m1{
+            margin-left: -100%;
+        } */
+        #img2:checked~.m2{
+            margin-left: -200%;
+        }
+        #img3:checked~.m3{
+            margin-left: -300%;
+        }
+        .praveen{
+            width: 100%;
+            height: 70vh;
+           
+        }
+        
+            .products{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        }
+        .products{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        .suriya{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+
+        .rolex{
+            width:368px;
+            margin-top: -3px;
+            background-color: lightgrey;
+        }
+
+        .karthi{
+            color:blue;
+        }
+        .vjs{
+            margin-left: 210px;
+        }
+        i{
+            color: red;
+        }
+
+        h3{
+            margin-top: -18px;
+            margin-left: 260px;
+            color: red;
+        }
+        .heading{
+            
+            background-color: aliceblue;
+        }
+
+        h1{
+            font-weight: 100;
+        }
+        .ss{
+            border: 2px solid white;
+            font-weight: 100;
+            padding:40px;
+            font-size:19px;
+        }
+       .feature-image{
+        margin-left: 650px;
+        margin-top: -360px;
+       }
+       .Readmore{
+        border: 2px solid black;
+        width: 150px;
+        padding: 10px;
+        margin-left: 25px;
+        text-align: center;
+        background-color: red;
+       }
+        .lastheading{
+            
+            padding: 40px;
+            
+            
+        }
+        h2{
+            color:green;
+        }
+        .purchaseNow{
+            background-color: red;
+            width: 120px;
+            margin-left: 1050px;
+            padding: 15px;
+            border-radius: 50px;
+            
+            font-size: 20px;
+        }
+        .sixteen{
+            margin-top: -15px;
+            position: absolute;
+            color:red;
+            margin-top: -45px;
+            font-size: 30px;
+        }
+       .arrival{
+        margin-left:-840px;
+        margin-top: 250px;
+        color: aliceblue;
+        font-size: 30px;
+        font-style:initial;
+       }
+      .best{
+        margin-left: 590px;
+        margin-top: -1850px;
+        color: red;
+      }
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Our products</a></li>
+            <li><a href="">Abouts</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+
+    </nav>
+    <div class="sixteen"><strong> <font color="white">SIXTEEN</font> CLOTHING</strong> </div>
+    <div class="slide show">
+    <div class="images">
+        <div class="radio"><input type="radio" name="slide" id="img1" checked>
+            <input  type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            
+
+        </div><input type="radio" name="slide" id="img1" checked>
+        <input type="radio" name="slide" id="img2">
+        <input type="radio" name="slide" id="img3">
+        
+        
+            <img class="praveen" src="./slide_01.jpg" alt="img1">
+            <!-- <img id="" class="praveen" src="./slide_02.jpg" alt="img2"> -->
+            <!-- <img class ="praveen" src="./slide_03.jpg" alt="img3"> -->
+            
+            <div class="arrival"> 
+               <div>NEW ARRIVALS ON SALE</div>
+            </div>
+            
+
+
+
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div>
+
+    </div><br><br><br><br>
+
+    <div class="products">
+        <h1>Latest Products</h1><br>
+
+        <span style="color: red;"> <h2>View all Products</h2></span>
+        
+    </div>
+    <div class="suriya">
+        <div>
+            <img src="./product_01.jpg" alt="">
+            <div class="rolex">
+                <span class="karthi">title goes here</span>
+                <span class="vjs"> <strong>$25.67</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h3>Review(21)</h3>
+
+            </div>
+        </div>
+         <div> 
+            <img src="./product_02.jpg" alt="">
+            <div class="rolex">
+                <span class="karthi">title goes here</span>
+                <span class="vjs"> <strong>$25.67</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h3>Review(21)</h3>
+
+            </div>
+        </div>
+        <div>
+                <img src="./product_03.jpg" alt="">
+                <div class="rolex">
+                    <span class="karthi">title goes here</span>
+                    <span class="vjs"> <strong>$25.67</strong></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+                    <i class='fas fa-star'></i>
+                    <i class='fas fa-star'></i>
+                    <i class='fas fa-star'></i>
+                    <i class='fas fa-star'></i>
+                    <i class='fas fa-star'></i>
+                    <h3>Review(21)</h3>
+    
+                </div>
+        </div>
+        <div>
+            <img src="./product_04.jpg" alt="">
+            <div class="rolex">
+                <span class="karthi">title goes here</span>
+                <span class="vjs"> <strong>$25.67</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h3>Review(21)</h3>
+
+            </div>
+        </div>
+        <div>
+            <img src="./product_05.jpg" alt="">
+           <i class='fas fa-star'></i>
+           <div class="rolex">
+        
+            <span class="karthi">title goes here</span>
+            <span class="vjs"> <strong>$25.67</strong></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+            <i class='fas fa-star'></i>
+                <h3>Review(21)</h3>
+
+            </div>
+        </div>
+        <div>
+            <img src="./product_06.jpg" alt="">
+            <div class="rolex">
+                <span class="karthi">title goes here</span>
+                <span class="vjs"> <strong>$25.67</strong></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti!</p>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h3>Review(21)</h3>
+
+            </div>
+            </div>
+                  
+    </div>  
+       
+    <div class="heading"> <h1>About sixteen clothing</h1></div>
+    <br>
+    <br>
+    <br>
+    <div class="ss">
+        <h4>Looking for the best products?</h4>
+        <p> <a href="https://templatemo.com/tm-546-sixteen-clothing">This template</a> is free to use for your business websites. However, you have no <br> permission to redistribute the downloadable ZIP file on any template <br>collection website. <a href="https://templatemo.com/live/templatemo_546_sixteen_clothing"> Contact us</a> for more info.</p>
+        <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem capable dolor go emy</li>
+        <li>Lorem suitble dolor sit amet</li>
+        <li>Lorem pass dolor sit amet</li>
+        <li>Lorem ipsum super sit amet</li>
+        </ul>
+    </div>
+
+    <div class="feature-image"><img src="./feature-image.jpg" alt=""></div>
+    <br>
+    <br>
+    <br>
+    <div class="Readmore"> <a href="https://templatemo.com/live/templatemo_546_sixteen_clothing"> <font color="white">Read more</font></a>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="lastheading"><h2>Creative & Unique Sixteen Products</h2> <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.
+        <br>
+        <div class="purchaseNow"> <a href="https://templatemo.com/live/templatemo_546_sixteen_clothing"><font color="white">purchase Now</font></a></div>
+
+    </div>
+<div class="best">
+    <div>BEST OFFERS</div>
+</div>
+    
+</body>
+</html>
